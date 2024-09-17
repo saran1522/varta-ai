@@ -3,7 +3,7 @@ import QuestionCard from "./QuestionCard";
 
 function Questions({ handleQuery }) {
   return (
-    <div className="z-20 flex gap-4 justify-between p-6 text-xl">
+    <div className="z-20 flex gap-4 justify-between text-xl">
       <QuestionCard
         question="What is AI and how is it transforming the world?"
         handleClick={handleQuery}

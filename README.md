@@ -1,3 +1,3 @@
 # Varta-AI
 
-The AI chatbot built using gemini api
+Conversational AI chatbot built using Gemini model

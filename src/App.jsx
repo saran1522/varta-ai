@@ -24,10 +24,10 @@ function App() {
   }
   return (
     <div className="p-2 overflow-hidden flex justify-center items-center h-screen w-screen bg-no-repeat bg-cover bg-center bg-gray-900 text-gray-200">
-      <div className="flex h-full flex-col justify-between md:w-[70%]">
+      <div className="flex h-full flex-col justify-between md:w-[75%]">
         {conversationHistory.length === 0 ? (
-          <div className="h-full flex flex-col gap-6 items-center justify-center">
-            <h1 className="text-center text-9xl bg-gradient-to-r from-purple-700 via-blue-400 to-pink-500 text-transparent bg-clip-text">
+          <div className="box-border flex flex-col gap-10 items-center justify-center">
+            <h1 className="text-center text-8xl bg-gradient-to-r from-purple-700 via-blue-400 to-pink-500 text-transparent bg-clip-text">
               Varta-AI
             </h1>
             <Questions handleQuery={handleQuery} />
@@ -66,7 +66,7 @@ function App() {
               setQuery(e.target.value);
             }}
             placeholder="ask something..."
-            className="placeholder-gray-500 text-gray-300 px-4 py-6 text-2xl w-10/12 outline-none focus:outline-none bg-transparent"
+            className="placeholder-gray-500 text-gray-300 px-4 py-5 text-2xl w-10/12 outline-none focus:outline-none bg-transparent"
           />
           <button
             className="border-l-2 border-l-gray-500 p-4 overflow-hidden font-extralight"
