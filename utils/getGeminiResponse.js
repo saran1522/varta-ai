@@ -13,9 +13,9 @@ export async function runConversation(query) {
   // Prepare the conversation for the API request
   const result = await model.generateContent({
     contents: conversationHistory,
-    generationConfig: {
-      maxOutputTokens: 200,
-    },
+    // generationConfig: {
+    //   maxOutputTokens: 500,
+    // },
   });
 
   const response = result.response;
